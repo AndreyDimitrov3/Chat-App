@@ -37,9 +37,9 @@ body{
 }
 
 .background-pattern-left{
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: -11.8vh;    
+    left: -24.1vh;
     z-index: -1;
     height: 87.6vh;
     width: 35.7%;
@@ -262,6 +262,53 @@ form{
     display: none;
 }
 
+@media screen and (max-width: 950px){
+    .main{
+        gap: 50px;
+    }
+
+    .aside{
+        margin-top: 65px;
+        margin-left: 50px;
+    }
+
+    .section-h1{
+        text-align: center
+    }
+
+    .section-p{
+        text-align: center;
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    body{
+        height: auto;
+        overflow: auto;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .aside{
+        margin-left: 0;
+    }
+
+    .background-pattern-left{
+        left: -19.5rem;
+        height: 508px;
+        width: 500px;
+    }
+
+    .background-pattern-right{
+        right: -19.5rem;
+        height: 508px;
+        width: 500px;
+    }
+}
+
 @media screen and (min-width: 1450px){
     p{
         font-size: 9.5px;
@@ -343,3 +390,4 @@ form{
         max-width: 500px;
     }
 }
+
