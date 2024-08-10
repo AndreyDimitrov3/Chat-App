@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="Chat.css">
+  <title>Chat App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-pattern-left"></div>
+    <div class="background-pattern-right"></div>
+    <main class="main">
+        <aside class="aside">
+            <header class="header">
+                <div class="header-top"></div>
+                <p class="less-than">&lt;</p>
+                <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+                <div>
+                    <h1 class="header-heading">Samuel Green</h1>
+                    <p class="desc">Available to Walk</p>
+                </div>
+                <div class="dot"></div>
+            </header>
+
+            <main class="mobile-text" id="mobileText">
+                <div id="noInputMobile">
+                    <div class="stranger-text"><p class="p-stranger">That sounds great. I’d be happy with that.</p></div>
+                    <div class="stranger-text over-images"><p class="p-stranger">Could you send over some pictures of your dog, please?</p></div>
+                
+                    <div class="image-holder">
+                        <img src="images/dog-image-1.jpg" alt="Dog Image 1" class="dog-image">
+                        <img src="images/dog-image-2.jpg" alt="Dog Image 2" class="dog-image">
+                        <img src="images/dog-image-3.jpg" alt="Dog Image 3" class="dog-image">
+                    </div>
+                    <div class="you-text"><p class="p-you">Here are a few pictures. She’s a happy girl!</p></div>
+                    <div class="you-text"><p class="p-you">Can you make it?</p></div>
+                
+                    <div class="stranger-text"><p class="p-stranger">She looks so happy! The time we discussed works. How long shall I take her out for?</p></div>
+             
+                    <div class="option-holder">
+                        <div class="option stranger-text" data-price="29" data-time="30 minutes">
+                            <div class="circle"></div>
+                            <p>30 minute walk</p>
+                            <p class="price">$29</p>
+                        </div>
+                        <div class="option stranger-text" data-price="49" data-time="1 hour">
+                            <div class="circle"></div>
+                            <p>1 hour walk</p>
+                            <p class="price">$49</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form onsubmit="event.preventDefault()">
+                    <input type="text" placeholder="Type a message…" class="input" id="input">
+                    <button class="submit" type="button" id="submit">&gt;</button>
+                </form>
+
+            </main>
+        </aside>
+    
+    
+        <section>
+            <h1 class="section-h1">Simple booking</h1>
+            <p class="section-p"> 
+                Stay in touch with our dog walkers through the chat interface. 
+                This makes it easy to discuss arrangements and make bookings. 
+                Once the walk has been completed you can rate your walker and book again all through the chat.
+            </p>
+        </section>
+    </main>
+
+    <script src="Chat.js"></script>
+</body>
+</html>
